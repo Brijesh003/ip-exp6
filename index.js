@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   var weight = req.body.Weight;
   var height = req.body.Height;
-  var bmi = weight / (height * height);
+  var bmi = (weight / ((height * height)/10000)).toFixed(2);
 
   bmi = bmi.toFixed();
 
