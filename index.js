@@ -25,9 +25,9 @@ app.post("/", (req, res) => {
 
   var category = "";
 
-  if (bmi < 18.5) {
+  if (bmi < 18.6) {
     category = "Underweight";
-  } else if (18.5 <= bmi && bmi < 25) {
+  } else if (bmi >= 18.6 && bmi < 24.9) {
     category = "Healthy Weight";
   } else if (25 <= bmi && bmi < 30) {
     category = "Overweight";
