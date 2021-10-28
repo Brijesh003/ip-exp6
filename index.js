@@ -29,10 +29,8 @@ app.post("/", (req, res) => {
     category = "Underweight";
   } else if (bmi >= 18.6 && bmi < 24.9) {
     category = "Healthy Weight";
-  } else if (25 <= bmi && bmi < 30) {
-    category = "Overweight";
-  } else {
-    category = "Obese";
+  }  else {
+    category = "Over Weight";
   }
   res.render(path.join(dirname, "result"), { result: bmi, category: category });
 });
