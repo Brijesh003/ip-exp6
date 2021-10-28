@@ -21,7 +21,7 @@ app.post("/", (req, res) => {
   var height = req.body.Height;
   var bmi = (weight / ((height * height)/10000)).toFixed(2);
 
-  bmi = bmi.toFixed();
+  
 
   var category = "";
 
